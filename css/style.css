@@ -339,6 +339,9 @@ svg path {
   .btn_sm {
     width: 150px;
     height: 40px; }
+  .btn_md {
+    width: 185px;
+    height: 40px; }
 
 .btn:hover {
   background: #be7650; }
@@ -488,6 +491,105 @@ svg path {
     /* identical to box height */
     text-align: center;
     color: #EE6B4D; }
+
+input::-webkit-input-placeholder {
+  color: #165A6F;
+  color: #165A6F;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; }
+
+input::-moz-placeholder {
+  color: #165A6F;
+  color: #165A6F;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; }
+
+textarea::-webkit-input-placeholder {
+  color: #165A6F;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; }
+
+textarea::-moz-placeholder {
+  color: #165A6F;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; }
+
+input[type="text"] {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px;
+  text-align: center; }
+
+input[type="email"] {
+  width: 300px;
+  height: 40px;
+  border: 0px;
+  border-radius: 20px;
+  text-align: center; }
+
+textarea[type="textarea"] {
+  resize: none;
+  width: 300px;
+  height: 80px;
+  border-radius: 20px;
+  border: 0px;
+  text-align: center; }
+
+.questions {
+  background-color: #E5E5E5; }
+  .questions__content {
+    max-width: 1270px;
+    margin: 0 auto; }
+  .questions__l-row {
+    width: 33%; }
+  .questions__r-row {
+    width: 67%; }
+  .questions__title {
+    padding-top: 145px;
+    color: #165A6F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px; }
+  .questions__subtitle {
+    padding-top: 8px;
+    color: #165A6F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px; }
+  .questions__input {
+    margin-top: 25px; }
+  .questions__input:focus {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #EE6B4D; }
+  .questions__input:hover {
+    cursor: pointer;
+    border: 1px solid #EE6B4D; }
+  .questions__textarea {
+    margin-top: 25px; }
+  .questions__textarea:focus {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #EE6B4D; }
+  .questions__textarea:hover {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #EE6B4D; }
+  .questions__btn {
+    margin-top: 25px; }
 
 @media (min-width: 1921px) {
   .banner {

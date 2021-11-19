@@ -369,6 +369,10 @@ svg path {
     width: 150px;
     height: 40px;
   }
+  &_md {
+    width: 185px;
+    height: 40px;
+  }
 }
 
 .btn:hover {
@@ -557,6 +561,120 @@ svg path {
     color: #EE6B4D;
   }
 }
+//QUESTIONS
+input::-webkit-input-placeholder { 
+  color: #165A6F;
+  color: #165A6F;
+  font-family: "Poppins"; 
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; 
+}
+input::-moz-placeholder { 
+  color: #165A6F; 
+  color: #165A6F;
+  font-family: "Poppins"; 
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; 
+}
+textarea::-webkit-input-placeholder {
+  color: #165A6F;
+  font-family: "Poppins"; 
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; 
+}
+textarea::-moz-placeholder { 
+  color: #165A6F;
+  font-family: "Poppins"; 
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; 
+}
+input[type="text"] {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px;
+  text-align: center;
+}
+input[type="email"] {
+  width: 300px;
+  height: 40px;
+  border: 0px;
+  border-radius: 20px;
+  text-align: center;
+}
+textarea[type="textarea"] {
+  resize:none;
+  width: 300px;
+  height: 80px;
+  border-radius: 20px;
+  border: 0px;
+  text-align: center;
+}
+.questions {
+  background-color: #E5E5E5;
+  &__content {
+    max-width: 1270px;
+    margin: 0 auto;
+  }
+  &__l-row {
+    width: 33%; 
+  }
+  &__r-row {
+    width: 67%;
+  }
+  &__title {
+    padding-top: 145px;
+    color: #165A6F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  &__subtitle {
+    padding-top: 8px;
+    color: #165A6F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__input {
+    margin-top: 25px;
+  }
+  &__input:focus {
+    cursor: pointer;
+    outline: none; 
+    border: 1px solid #EE6B4D;
+  }
+  &__input:hover {
+    cursor: pointer;
+    border: 1px solid #EE6B4D;
+  }
+  &__textarea {
+    margin-top: 25px;
+  }
+  &__textarea:focus {
+    cursor: pointer;
+    outline: none; 
+    border: 1px solid #EE6B4D;
+  }
+  &__textarea:hover {
+    cursor: pointer;
+    outline: none; 
+    border: 1px solid #EE6B4D;
+  }
+  &__btn {
+    margin-top: 25px;
+  }
+}
+
+//MEDIA
 @media (min-width: 1921px){
   .banner {
     max-height: 100%;
@@ -566,6 +684,7 @@ svg path {
     }
   }
 }
+
 @media (max-width: 1901px){
   .banner {
     max-height: 100%;
@@ -638,7 +757,6 @@ svg path {
     }
   }
 }
-
 
 @media (max-width: 1600px){
   .booksSeller {
