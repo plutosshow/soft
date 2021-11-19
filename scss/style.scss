@@ -549,7 +549,6 @@ svg path {
   background-image: url("../img/png/banner_bg.png");
   &__p {
     position: absolute;
-    left: 75px;
     top: 50%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -559,6 +558,9 @@ svg path {
     /* identical to box height */
     text-align: center;
     color: #EE6B4D;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 //QUESTIONS
@@ -616,7 +618,9 @@ textarea[type="textarea"] {
 }
 .questions {
   background-color: #E5E5E5;
+  padding-bottom: 145px;
   &__content {
+    display: flex;
     max-width: 1270px;
     margin: 0 auto;
   }
@@ -672,6 +676,117 @@ textarea[type="textarea"] {
   &__btn {
     margin-top: 25px;
   }
+  &__gallery {
+    display: block;
+    position: relative;
+  }
+  &__img {
+    &_1 {
+      position: absolute;
+      width: 136px;
+      height: 145px;
+      top: 350px;
+    }
+    &_2 {
+      position: absolute;
+      width: 216px;
+      height: 192px;
+      top: 230px;
+      left: 167px;      
+    }
+    &_3 {
+      position: absolute;
+      width: 93px;
+      height: 115px;
+      top: 452px;
+      left: 167px;        
+    }
+    &_4 {
+      position: absolute;
+      width: 88px;
+      height: 115px;
+      top: 307px;
+      left: 414px;       
+    }
+    &_5 {
+      position: absolute;
+      width: 332px;
+      height: 231px;
+      top: 62px;
+      left: 403px;       
+    }
+    &_6 {
+      position: absolute;
+      width: 249px;
+      height: 242px;
+      top: 343px;
+      left: 533px;       
+    }
+    &_7 {
+      position: absolute;
+      width: 211px;
+      height: 210px;
+      top: 452px;
+      left: 291px;       
+    }
+  }
+}
+
+//FOOTER
+
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: #165A6F;
+  &__row {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  &__column {
+    display: inline-flex;
+    vertical-align: middle;
+    width: calc(100% / 3.0 - 3px);
+    &_center {
+      justify-content: center;
+    }
+    &_start {
+      justify-content: start;
+    }
+    &_end {
+      justify-content: end;
+    }
+  }
+  &__link {
+
+    color: #fff;
+  }
+  &__logo {
+    margin-left: 162px;
+  }
+  &__basket {
+    margin-right: 162px;
+  }
+  &__icon {
+    fill: #fff;    
+  }
+  &__icon {
+    fill: #fff;
+  }
+  &__logtext{
+    color: #fff;
+  }
+  &__menu {
+    height: 100px;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.ml100 {
+  margin-left: 100px;
+}
+.mr100 {
+  margin-right: 100px;
 }
 
 //MEDIA
@@ -894,7 +1009,31 @@ textarea[type="textarea"] {
   }
 }
 
+@media (max-width: 1330px){
+  .questions {
+    &__l-row {
+      padding-left: 7px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .questions {
+    &__gallery {
+      margin-top: 80px;
+      transform: scale(0.9);
+    }
+  }
+
+}
+
 @media (max-width: 1130px) {
+  .questions {
+    &__gallery {
+      margin-top: 140px;
+      transform: scale(0.7);
+    }
+  }
   .booksSeller {
     &__row {
       flex-direction:column;
@@ -990,7 +1129,44 @@ textarea[type="textarea"] {
   }
 }
 
+@media (max-width: 1000px) {
+  input[type="text"], input[type="email"], textarea[type="textarea"], .btn {
+    width: 100%;
+  }
+
+  .questions {
+    &__r-row {
+      display: none;
+    }
+    &__l-row {
+      width: 100%;
+    }
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+.footer {
+ &__column {
+  width: 100%;
+  &_start {
+    display: none;
+  } 
+  &_end {
+    display: none;
+  }
+ } 
+}
+}
+
 @media (max-width: 768px){
+    .questions__content {
+      text-align: center;
+      width: 94%;
+      margin: 0 auto;
+    }
   .header {
     height: 60px;
     &__row {
@@ -1178,6 +1354,25 @@ textarea[type="textarea"] {
 }
 
 @media (max-width: 370px){
+  .questions {
+    padding-bottom: 40px;
+    &__title {
+      padding-top: 40px;
+    }
+  }
+
+  .footer {
+    &__column {
+      display: flex;
+      flex-direction: column;
+      &_start {
+      display: none;
+      } 
+      &_end {
+        display: none;
+      }
+    }
+  }
   .booksSeller {
     &__column {
       max-width: 300px;
